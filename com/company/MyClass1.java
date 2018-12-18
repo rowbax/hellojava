@@ -15,7 +15,17 @@ public class MyClass1 {
 
     Integer int;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyClass1 myClass1 = (MyClass1) o;
+        return Objects.equals(str, myClass1.str);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(str);
 }
 
 
