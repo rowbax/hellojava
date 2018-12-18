@@ -26,6 +26,7 @@ public class MyClass1 {
     @Override
     public int hashCode() {
         return Objects.hash(str);
+    }
 }
 
 
